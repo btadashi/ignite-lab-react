@@ -1,0 +1,13 @@
+# Colamos a nossa query
+# Aqui dentro, é importante que todas as queries tenha
+# um nome. Já que é o caso, damos o nome à esa query
+# de GetLessons
+query GetLessons {
+  lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
+    id
+    lessonType
+    availableAt
+    title
+    slug
+  }
+}
