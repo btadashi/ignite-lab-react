@@ -35,8 +35,8 @@ export function Video(props: VideoProps) {
         </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto" >
-        <div className="flex items-start gap-16">
+      <div className="sm:p-6 p-8 max-w-[1100px] mx-auto" >
+        <div className="lg:flex items-start gap-16">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">
               {data.lesson.title}
@@ -46,7 +46,7 @@ export function Video(props: VideoProps) {
             </p>
 
             {data.lesson.teacher && (
-              <div className="flex items-center gap-4 mt-6">
+              <div className="flex sm:items-start items-center gap-4 mt-6">
                 <img
                   className="h-16 w-16 rounded-full border-2 border-blue-500"
                   src={data.lesson.teacher.avatarURL}
@@ -61,7 +61,7 @@ export function Video(props: VideoProps) {
             )}
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 sm:mt-8">
             <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
               <DiscordLogo size={24} />
               Comunidade do Discord
@@ -74,29 +74,29 @@ export function Video(props: VideoProps) {
           </div>
         </div>
 
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="sm:gap-4 gap-8 sm:mt-16 mt-20 grid grid-cols-2 sm:grid-cols-1">
           <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-green-700 h-full sm:p-4 p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Material complementar</strong>
-              <p className="text-sm text-gray-200 mt-2">Acesse o material complementar para acelerar o seu desenvolvimento</p>
+              <strong className="sm:text-lg text-2xl">Material complementar</strong>
+              <p className="sm:text-xs text-sm text-gray-200 mt-2">Acesse o material complementar para acelerar o seu desenvolvimento</p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 flex items-center sm:ml-[-12px] sm:pr-2 sm:p-0">
               <CaretRight size={24} />
             </div>
           </a>
 
           <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-green-700 h-full sm:p-4 p-6 flex items-center">
               <Mountains size={40} />
             </div>
             <div className="py-6 leading-relaxed">
-              <strong className="text-2xl">Wallpapers exclusivos</strong>
-              <p className="text-sm text-gray-200 mt-2">Baixe wallpapers exclusivos do Ignite Lab e personalize sua máquina</p>
+              <strong className="sm:text-lg text-2xl">Wallpapers exclusivos</strong>
+              <p className="sm:text-xs text-sm text-gray-200 mt-2">Baixe wallpapers exclusivos do Ignite Lab e personalize sua máquina</p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 flex items-center sm:ml-[-12px] sm:pr-2 sm:p-0">
               <CaretRight size={24} />
             </div>
           </a>
