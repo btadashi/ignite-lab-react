@@ -9,7 +9,7 @@ export function Sidebar() {
   const { isSidebarDrawerOpen } = useSidebarDrawer();
 
   return (
-    <aside className={classnames("w-[348px] bg-gray-700 p-6 border-l border-gray-600 sm:hidden", {
+    <aside className={classnames("w-[348px] bg-gray-700 p-6 border-l border-gray-600 sm:w-full", {
       "sm:hidden": !isSidebarDrawerOpen
     })}>
       <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block ">

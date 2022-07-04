@@ -17,7 +17,7 @@ export function Event() {
     <div className="flex flex-col min-h-screen">
       <Header />
       {isSidebarDrawerOpen ? (
-        <main className="flex flex-1 lg:flex-row flex-col">
+        <main className="flex flex-1 lg:flex-row flex-col ">
           <Sidebar />
         </main>
       ) : (
